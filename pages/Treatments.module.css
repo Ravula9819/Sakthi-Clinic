@@ -1,0 +1,67 @@
+/* TreatmentsSection.module.css */
+
+.treatmentsSection {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+.treatmentsSection h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.treatmentsSection .introText {
+  text-align: center;
+  max-width: 800px;
+  margin: 1rem auto 3rem auto;
+  font-size: 1rem;
+  color: #555;
+}
+
+.treatmentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.treatmentCard {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.treatmentCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.treatmentCard h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.treatmentCard p {
+  font-size: 0.95rem;
+  color: #444;
+}
+.icon {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  margin: 0 auto 1rem; /* centers the icon and adds spacing below */
+  display: block;
+}
+@media (max-width: 480px) {
+  .icon {
+    max-width: 250px;
+  }
+}

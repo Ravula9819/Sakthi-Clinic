@@ -1,0 +1,30 @@
+.privacyPage {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+.section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  color: #007bff;
+}
+
+.section ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+.section li {
+  margin-bottom: 0.5rem;
+}

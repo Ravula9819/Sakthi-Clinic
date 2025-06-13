@@ -1,0 +1,117 @@
+/* Contact.module.css */
+
+.contactPage {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+.contactSection h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #222;
+}
+
+.contactContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contactForm,
+.clinicInfo {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Contact Form Styles */
+.contactForm .formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.contactForm label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.submitButton {
+  background-color: #007bff; /* Primary accent color */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+/* Clinic Info Styles */
+.clinicInfo h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.infoList {
+  list-style: none;
+  padding: 0;
+}
+
+.infoList li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.infoList i {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-right: 1rem;
+  min-width: 24px;
+}
+
+.infoList span {
+  font-size: 1rem;
+  color: #555;
+}
+
+.infoList strong {
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+  }
+
+  .infoList li {
+    margin-bottom: 1.25rem;
+  }
+}
