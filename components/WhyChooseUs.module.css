@@ -1,0 +1,60 @@
+.section {
+  padding: 5rem 2rem;
+  text-align: center;
+  background-color:#e6f7ff; /* very soft blue for calm medical look */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2.5rem;
+  color: #005f99; /* deep medical blue */
+  font-weight: 700;
+}
+
+.reasonsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reasonCard {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 5px solid #007bff;
+  box-shadow: 0 4px 14px rgba(0, 123, 255, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.reasonCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 123, 255, 0.15);
+}
+
+.reasonCard h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.reasonCard p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .section h2 {
+    font-size: 2rem;
+  }
+
+  .reasonCard {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,95 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 6rem 3rem;
+  background-color:#e6f7ff; /* Soft background for clean medical look */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.content {
+  flex: 1;
+  text-align: left;
+}
+
+.content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #005f99;
+}
+
+.content p {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.cta {
+  display: flex;
+  gap: 1rem;
+}
+
+.cta button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+  background-color: #0056b3;
+}
+
+.heroImage {
+  flex: 1;
+  max-width: 500px;
+}
+
+.heroImage img {
+  width: 500px;
+  height:auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 123, 255, 0.15);
+  background: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .cta {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .heroImage {
+    margin-top: 2rem;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .heroImage img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+  }
+
+}
